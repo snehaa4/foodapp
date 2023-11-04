@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food delivery services in India | MyOnlineMeal.com</title>
+    <link rel="stylesheet" media="screen and (max-width: 886px)" href="css/phone.css" >
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+            height: 9vh;
+
+        }
+
+        #navbar::before {
+            content: '';
+            background-color: black;
+            height: 95%;
+            width: 100%;
+            top: 0%;
+            left: 0%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.7;
+
+        }
+
+        #navbar ul {
+            display: flex;
+
+        }
+
+        #navbar ul li {
+            list-style: none;
+        }
+
+        #navbar ul li a {
+            /*  display block kyu ki padding dena h */
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            color: white;
+            border-radius: 30px;
+
+        }
+
+        #navbar ul li a:hover {
+            color: antiquewhite;
+            background-color: dimgray;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 45px;
+            margin: 12px;
+            padding: 10px;
+        }
+
+        /* home section  */
+        #Home {
+            display: flex;
+            /* position: relative; */
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            padding: 3px 200px;
+            height: 571px;
+
+
+        }
+
+        /* #Home::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(food\ img.jpg);
+            background-repeat: no-repeat ;
+            background-size: auto 100%;
+            
+            z-index: -1;
+            opacity: 0.48;
+        } */
+        #Home::before {
+            content: "";
+            position: absolute;
+            background: url('food\ img.jpg') no-repeat center center/cover;
+            height: 642px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.49;
+        }
+
+        /* Utility class*/
+        /* .heading{
+            font-size: 2.9rem;
+            padding: 12px;
+            
+        } */
+        .heading {
+            font-size: 2.9rem;
+        }
+
+        #Home p {
+            font-size: 21px;
+            text-align: center;
+            /* display: flex; */
+            /* position: absolute; */
+        }
+
+        .btn {
+            /* padding: 7px 17px ; */
+            /* display: flex; */
+            /* width: 9%;
+            height: 9%; */
+            font-size: 17px;
+            background-color: darkslategrey;
+            color: white;
+            /* text-align: center;
+            justify-content: center;
+            align-items: center; */
+            margin: 19px;
+            padding: 6px 20px;
+            border-radius: 5px;
+            transition: all;
+            transition-duration: .4s;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background-color: darkolivegreen;
+            padding: 12px 22px;
+
+        }
+
+        #services {
+            display: flex;
+            margin: 34px;
+
+        }
+
+        #services .box {
+            border: 2px solid saddlebrown;
+            text-align: center;
+            margin: 3px 15px;
+            border-radius: 3px;
+            background-color: rgb(237, 226, 212);
+
+
+
+        }
+
+        .services {
+
+            text-align: center;
+        }
+
+        #services .secondary {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #services .box img {
+            width: 159px;
+            display: block;
+            margin: auto;
+
+        }
+
+        .h-primarry {
+            font-size: 2rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #clients-section {
+            height: 144px;
+            position: relative;
+
+        }
+
+        #clients img {
+            height: 124px;
+        }
+
+        .clients-items {
+            padding: 45px;
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url('laptop.img.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 30%;
+            z-index: -1;
+            opacity: .7;
+        }
+
+        #contact {
+            position: relative;
+
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            background-image: url(telephone.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: .4;
+        }
+        #contact-box{
+            justify-content: center;
+            text-align: center;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="harry logo.jpg" alt="">
+        </div>
+        <div>
+            <ul>
+                <li class="items"> <a href=""> Home</a></li>
+                <li class="items"> <a href="">services</a></li>
+                <li class="items"><a href="">About us</a></li>
+                <li class="items"><a href="">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="Home">
+
+        <h1 class="heading">Wellcome to MyOnlineMeal </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <p>Lorem a doloremque ipsa
+            asperiores eius voluptatibus rem similique mollitia, blanditiis rerum harum iste incidunt tenetur.</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section class="services center">
+        <h1 class="h-primarry center">Our services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="png.png" alt="">
+                <h2 class="secondary center">food Ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat aperiam, quae quibusdam
+                    tempore laudantium consectetur consequatur in ipsum dicta dolorum doloremque perferendis nam ut
+                    dignissimos.</p>
+            </div>
+            <div class="box">
+                <img src="png.png" alt="">
+                <h2 class="secondary center">food catering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat aperiam, quae quibusdam
+                    tempore laudantium consectetur consequatur in ipsum dicta dolorum doloremque perferendis nam ut
+                    dignissimos.</p>
+            </div>
+            <div class="box">
+                <img src="png.png" alt="">
+                <h2 class="secondary center">Bulk Ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat aperiam, quae quibusdam
+                    tempore laudantium consectetur consequatur in ipsum dicta dolorum doloremque perferendis nam ut
+                    dignissimos.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primarry ">Our clients</h1>
+        <div id="clients">
+            <div class="clients-items">
+                <img src="instagram.png" alt="Our clients">
+            </div>
+            <div class="clients-items">
+                <img src="instagram.png" alt="Our clients">
+            </div>
+            <div class="clients-items">
+                <img src="instagram.png" alt="Our clients">
+            </div>
+            <div class="clients-items">
+                <img src="instagram.png" alt="Our clients">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primarry">
+            Contact us
+        </h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name=name id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="text" name=email id="email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">phone no.</label>
+                    <input type="text" name=phone id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="24" rows="5"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
